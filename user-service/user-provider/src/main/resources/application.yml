@@ -1,7 +1,10 @@
 spring:
   profiles:
     active: dev
+<<<<<<< HEAD
 
+=======
+>>>>>>> upstream/stu_dev_0809
 mybatis:
   mapper-locations: classpath*:com/gpmall/user/dal/persistence/*Mapper.xml"
   type-aliases-package: com.gpmall.user.dal.entitys

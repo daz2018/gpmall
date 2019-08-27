@@ -29,10 +29,17 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/user/*': {
+<<<<<<< HEAD
         target: 'http://127.0.0.1:8082'  // 请求本地 需要咕泡商城后台项目 默认127.0.0.1:8080
+=======
+        target: 'http://127.0.0.1:8082'  // 请求本地 需要咕泡商城后台项目 默认127.0.0.1:8082
+>>>>>>> upstream/stu_dev_0809
       },
       '/shopping/**': {
         target: 'http://127.0.0.1:8081'  // 请求本地 需要咕泡商城后台项目 默认127.0.0.1:8081
+      },
+      '/cashier/**': {
+        target: 'http://127.0.0.1:8083'  // 请求本地 需要咕泡商城后台项目 默认127.0.0.1:8083
       }
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"

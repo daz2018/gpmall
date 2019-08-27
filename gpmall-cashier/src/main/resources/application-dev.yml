@@ -4,12 +4,20 @@ dubbo:
     name: gpmall-cashier
     owner: Mic
   registry:
+<<<<<<< HEAD
     address: zookeeper://localhost:2181
+=======
+    address: zookeeper://zk.gpmall.com:2181
+>>>>>>> upstream/stu_dev_0809
     check: true
     group: dubbo-dev
     simplified: true
   metadata-report:
+<<<<<<< HEAD
     address: zookeeper://localhost:2181
+=======
+    address: zookeeper://zk.gpmall.com:2181
+>>>>>>> upstream/stu_dev_0809
     retry-times: 30
     cycle-report: false
     group: dubbo-dev

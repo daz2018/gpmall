@@ -1,6 +1,10 @@
 spring:
   datasource:
+<<<<<<< HEAD
     url: jdbc:mysql://localhost:3306/gpmall?useUnicode=true&characterEncoding=utf8&useOldAliasMetadataBehavior=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+=======
+    url: jdbc:mysql://mysql.gpmall.com:3306/gpmall?useUnicode=true&characterEncoding=utf8&useOldAliasMetadataBehavior=true&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=UTC
+>>>>>>> upstream/stu_dev_0809
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -20,7 +24,11 @@ spring:
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
     useGlobalDataSourceStat: true
   redisson:
+<<<<<<< HEAD
       address: 127.0.0.1:6379
+=======
+      address: redis.gpmall.com:6379
+>>>>>>> upstream/stu_dev_0809
       timeout: 3000
       database: 0
       pool:
@@ -36,12 +44,20 @@ dubbo:
     name: dubbo
     port: 20881
   registry:
+<<<<<<< HEAD
     address: zookeeper://127.0.0.1:2181
+=======
+    address: zookeeper://zk.gpmall.com:2181
+>>>>>>> upstream/stu_dev_0809
     check: true
     group: dubbo-dev
     simplified: true
   metadata-report:
+<<<<<<< HEAD
     address: zookeeper://127.0.0.1:2181
+=======
+    address: zookeeper://zk.gpmall.com:2181
+>>>>>>> upstream/stu_dev_0809
     retry-times: 30
     cycle-report: false
     group: dubbo-dev
